@@ -14,8 +14,13 @@ greeting()
 total = 0
 totals = 0
 
-#This will ask you how many games you would like the average
-how_many_games = int(input( '\n' 'How many games would you like to Average?: '))
+
+try:
+    how_many_games = int(input('How many games would you like to average?: '))
+    print('Is this the amount of games you would like to average? (If not please refresh): ', str(how_many_games))
+except ValueError:
+    print('That was not an integer')
+
 
 #The for loop will
 for i in range(how_many_games):
@@ -24,11 +29,13 @@ for i in range(how_many_games):
     total = total + num_shots
     totals = totals + num_shots_made
 
-average = total / totals
 
 x = average
 while x > -1:
     print(x)
     break
 
+average = total / totals
+#This will print the final average of your goals.
+>>>>>>> Try_and_Except
 print('Shot Percentage: ' + str(round(average, 2)))
