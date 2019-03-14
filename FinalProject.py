@@ -26,7 +26,6 @@ try:
 except ValueError:
     print('That was not an integer')
 
-
 #The for loop will
 for i in range(how_many_games):
     num_shots = int(input( '\n' 'How many shots did you take this game?: '))
