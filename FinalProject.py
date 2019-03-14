@@ -26,4 +26,9 @@ for i in range(how_many_games):
 
 average = total / totals
 
+x = average
+while x > -1:
+    print(x)
+    break
+
 print('Shot Percentage: ' + str(round(average, 2)))
